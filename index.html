@@ -1,0 +1,106 @@
+---
+layout: default
+header: Life of a Swapper
+subheader: Who wants to stay in the same place anyway!
+header-image: /images/hitch.jpg
+searchbar: true
+---
+
+<section>
+  <div>
+    <h2> Recently Added Swaps </h2>
+  </div>
+
+
+  <div class="grid-center recent">
+    {% for swap in site.swaps limit:3 %}
+    <div class="col-3-spaceBetween">
+      <div class="zoom">
+        <div class="bg-house" style="background-image:url('{{swap.image}}')"></div>
+      </div>
+      <div class="text-box bump-up">
+        <p><span> Type:</span> {{swap.type}}</p>
+        <p><span> Bedrooms:</span>{{swap.bedrooms}}</p>
+        <p><span> Inclusions:</span> {{swap.inclusions}}</p>
+        <p><span> Rating:</span>{{swap.rating}}</p>
+        <div hidden>
+          {% for place in swap.extra-info limit:3 %}
+          <p><span> </span> {{place.placeholder}}</p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+
+
+<div class="center">
+  <!-- - - - - -  - insert button  -->
+  <a class="smore" href="#"> See more </a>
+</div>
+</section>
+
+<section>
+  <!--  - - - - - - -  need to also inclde the triangles to amend the space -->
+
+<section class="relative">
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d64484497.22354746!2d21.604515440849408!3d9.437060337672762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1513133260223" width="1400" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+  <svg class="mask top" x="0px" y="0px" viewBox="0 0 1200 80" enable-background="new 0 0 1200 100" xml:space="preserve">
+  <polygon class="teal" points="0,0 1200,80 1200,0"></polygon>
+  </svg>
+
+  <svg class="mask bottom" x="0px" y="0px" viewBox="0 0 1200 80" enable-background="new 0 0 1200 100" xml:space="preserve">
+    <polygon points="0,80 1200,80 1200,0"></polygon>
+</svg>
+
+</section>
+
+  <section>
+    <div>
+      <h2> Popular swaps </h2>
+    </div>
+
+    <div class="grid-center popular">
+        {% for swap in site.swaps limit:3 %}
+        <div class="col-3-spaceBetween">
+          <div class="zoom">
+            <div class="bg-house" style="background-image:url('{{swap.image}}')"></div>
+          </div>
+          <div class="text-box bump-up">
+            <p><span> Type:</span> {{swap.type}}</p>
+            <p><span> Bedrooms:</span>{{swap.bedrooms}}</p>
+            <p><span> Inclusions:</span> {{swap.inclusions}}</p>
+            <p><span> Rating:</span>{{swap.rating}}</p>
+            <div hidden>
+              {% for place in swap.extra-info limit:3 %}
+              <p><span> </span> {{place.placeholder}}</p>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="center">
+        <!-- - - - - -  - insert button  -->
+        <a class="smore" href="#"> See more </a>
+      </div>
+      <section class="subscribe">
+        <h2 class="signup"> Sign up and stay informed </h2>
+        <p class="signup"> Join the Swapper community and get the latest on listings and Swaps taken.</p>
+
+        <div class="col-middle-center center">
+          <div class="formspree">
+            <form method="POST" action="http://formspree.io/nickjdellabosca@gmail.com">
+
+            </label> <input type="Firstname" placeholder="First Name" id= "firstname" required>
+
+            <input type="email" name="email" placeholder="Your email" id= "email" > </div>
+            <div>  <input type="submit" value="SUBMIT"> </div>
+          </section>
+
+
+
+          <!-- - - - - - - - - insert triangle and sign up / log in functions buttons - - - - -  -->

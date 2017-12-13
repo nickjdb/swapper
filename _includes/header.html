@@ -1,0 +1,37 @@
+<header class="banner grid">
+      <nav class="col-2 logo">
+      <a href="index.html"> <img src="images/logo.jpg"> </a> </nav>
+
+      <nav class="col-10 navbar">
+        <a class="hidden" href="dummy.html">no click</a>
+        <a href="Why.html">Why</a>
+        <a href="Interested.html">Interested Swapper</a>
+        <a href="signup.html"> Sign Up</a>
+        <a href="login.html">Log In</a>
+</nav>
+    <div class="col-12">
+
+      <h1> {{page.header}} </h1>
+      <h3> {{page.subheader}}  </h3>
+      <div class="background-image:url('{{page.header-image}}')"></div>
+    </div>
+
+    </div>
+
+{% if page.searchbar %}
+<div class="search center">
+    <form class="search-bar">
+    <input type="location" placeholder="Search Location" id= "location" >
+    <input type="date" placeholder="Check In Date" id= "date" >
+    <input type="days" placeholder="Days Stay" id= "days" >
+    <select name="Flexible">
+        <option value="flexible"> Flexible dates</option>
+        <option value="naflexible"> Fixed dates </option>
+        </select>
+    <input type="submit" value="SUBMIT">
+  </div>
+    <!-- insert flexibility tab -->
+
+{% endif %}
+
+  </header>
