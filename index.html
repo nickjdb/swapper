@@ -12,9 +12,11 @@ searchbar: true
   </div>
 
 
-  <div class="grid-center recent">
+  <div class="grid-center">
+  <a href="/listinglanding.html">
     {% for swap in site.swaps limit:3 %}
-    <div class="col-3-spaceBetween">
+    <div class="col-3-spaceBetween recent">
+
       <div class="zoom">
         <div class="bg-house" style="background-image:url('{{swap.image}}')"></div>
       </div>
@@ -28,7 +30,7 @@ searchbar: true
           <p><span> </span> {{place.placeholder}}</p>
           {% endfor %}
         </div>
-      </div>
+      </div> </a>
     </div>
     {% endfor %}
   </div>

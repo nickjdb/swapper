@@ -71,8 +71,16 @@ text-align: center;
 
 .recent p, .popular p{
   text-align: Left;
+  color: black;
   padding: .5%;
+  display: block;
 }
+
+.recent a, .popular a {
+  display: block;
+  padding: 0;
+}
+
 h1 {
   font-size: 4rem;
   color: white;
@@ -131,12 +139,15 @@ h2.signup {
 
 .headteam {
   color: white;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
+p.a {
+    font-size: 20px;
+}
+
 a{
-  font-size: 20px;
   color: white;
   padding-left: 2%;
   padding-right: 2%;
@@ -238,20 +249,20 @@ padding: 12vh 5%;
 
 .bg-nick {
   background-image: url('images/nick.jpg');
-  padding-bottom: 70%;
-  margin: 2% 15%
+  padding-bottom: 85%;
+  margin: 2% 7.5%
 }
 
 .bg-bob {
   background-image: url('images/bob.jpg');
-  padding-bottom: 70%;
-  margin: 2% 15%
+  padding-bottom: 85%;
+  margin: 2% 7.5%
 }
 
 .bg-jane {
   background-image: url('images/jane.jpg');
-  padding-bottom: 70%;
-  margin: 2% 15%
+  padding-bottom: 85%;
+  margin: 2% 7.5%
 }
 
 .subscribe {
@@ -433,3 +444,103 @@ input[type="submit"] {
   border-radius:2px;
   border: none;
 }
+
+/* JQuery - - - - - - -  */
+
+.mobshow {
+  display:none;
+}
+
+@media (max-width:576px) {
+  .mobshow {
+    display:block;
+  }
+  .mobhide {
+    display: none;
+  }
+}
+
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9999999999;
+  padding: 8px;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 25px;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-button.active span{
+  border-color: #282828;
+  background-color:#383;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: 02px;
+}
+
+.burger-bottom{
+  bottom: 02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+  transform: rotateZ(27000deg);
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 99999999;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #282828;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+.burger-menu li{list-style:none}
+/*
+.dropdown-nav:hover .dropdown-content {
+    display: block;
+} */
