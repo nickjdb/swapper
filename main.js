@@ -43,4 +43,14 @@ $('a[href*="#"]')
     }
   });
 
+  $(window).scroll(function(){
+      if ($(window).scrollTop() >= 75) {
+         $('.scrollcheck').addClass('headerfixed');
+      }
+      else {
+         $('.scrollcheck').removeClass('headerfixed');
+      }
+  });
+
+
 });
