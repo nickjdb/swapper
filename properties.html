@@ -1,0 +1,28 @@
+---
+title: Luxury Bali Villa
+Length: 20
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et d.
+type: ['learning', 'yoga', 'wellness']
+feature_image:
+banner_image:
+gallery:
+  -image: /images/photo.jpg
+    caption: My home in Bali
+  -image: /images/photo.jpg
+    caption: My home in Bali
+  -image: /images/photo.jpg
+    caption: My home in Bali
+  -image: /images/photo.jpg
+    caption: My home in Bali
+
+{% for item in page.gallery %}
+
+<p><span> Type:</span> Entire House</p>
+<p><span> Bedrooms:</span> 3 beds, 3.5 bath</p>
+<p><span> Inclusions:</span> includes car</p>
+<p><span> Rating:</span> 5 star</p>
+<div hidden>
+<p><span> Placeholder1:</span> Placeholder1</p>
+<p><span> Placeholde2:</span> Placeholde2</p>
+<p><span> Placeholder3:</span> Placeholder3</p> </div>
+{% endfor %}
