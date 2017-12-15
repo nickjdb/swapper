@@ -1,15 +1,16 @@
 ---
 layout: default
-header: Log in
+header: Sign up
 subheader:
-header-image: /images/house6.jpg
+header-image: /images/house7.jpg
 searchbar:
 subscribebar:
-footer:
 ---
 
-<form class="login" action="https://formspree.io/youemail@gmail.com" method="POST">
-  <div class="grid loginform">
+<section class="signup bg-signup">
+
+<form action="https://formspree.io/youemail@gmail.com" method="POST">
+  <div class="grid sign">
       <div class="col-6_sm-12 padded">
           <label for="name"> Your Name </label>
           <input type="text" name="name" id="name" placeholder="Name" />
@@ -44,11 +45,4 @@ footer:
           <input type="submit" value="Submit" class="button" />
         </div>
 
-    <!-- These are hidden fields -->
-    <input type="hidden" name="_cc" value="contact@theblondeabroad.com" />
-    <input type="text" name="_gotcha" style="display:none" />
-    <input type="hidden" name="_next" value="../register/blogging-thanks" />
-  </div></form>
-
-
-<!-- also don't forget to add gridlex and the fonts in the head! -->
+  </div></form> </section>
