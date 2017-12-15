@@ -1,24 +1,35 @@
 ---
 layout: default
+footer: true
 ---
 
-<header >
+<section>
 <!-- style="background-image: url('{{page.header-image}}');"> -->
+
+<div class="flexslider">
+  <ul class="slides">
+    {% for item in page.gallery %}
+    <li data-thumb="{{item.image_path}}">
+      <img src="{{item.image_path}}"/>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 
 <a href="#description">Description </a>
 <a href="#area">Area </a>
 <a href="#amenities">Amenities </a>
-
+</section>
 
 <section class="listing">
   <div>
-  <h2> {{page.title}} </h2>
-  <h3> {{page.type}} - {{page.location}} </h3>
-  <p><span> people icon </span> {{page.num-guests}} guests <span> house icon </span> {{page.num-bedrooms}} bedroom <span> bed icon </span> {{page.num-beds}} beds <span> bath icon </span> {{page.num-bath}} bath </p>
+    <h2> {{page.title}} </h2>
+    <h3> {{page.type}} - {{page.location}} </h3>
+    <p><span> people icon </span> {{page.num-guests}} guests <span> house icon </span> {{page.num-bedrooms}} bedroom <span> bed icon </span> {{page.num-beds}} beds <span> bath icon </span> {{page.num-bath}} bath </p>
 
-<!--  - - - - - insert this home is on people's minds  -->
+    <!--  - - - - - insert this home is on people's minds  -->
 
-<section class="banner" style="background-image:url('{{page.header-image}}')">
+<section class="banner" >
 
   <h4 id="description"> Description </h4>
   <p> {{page.description}} </p>
@@ -37,13 +48,15 @@ layout: default
 <h4> Cancellation </h4>
 <p> {{page.cancellation}}</p4>
 
+  <h4 id="reviews"> Reviews </h4>
+  <p> {{page.reviews}} </p>
+
   </div>
 </section>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.4199344750955!2d115.11934191525644!3d-8.651550390399276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2387477e463e9%3A0x11e2107e05a773a3!2sCanggu+Beach+Villa!5e0!3m2!1sen!2sid!4v1513322694278" width="1500" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-<h4 id="reviews"> Reviews </h4>
-<p> {{page.reviews}} </p>
+
 
   <section class="listings">
     <div>

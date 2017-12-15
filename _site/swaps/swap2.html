@@ -13,6 +13,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i" rel="stylesheet">
 
+  <link rel="stylesheet" href="/flexslider.css"/>
   <link rel="stylesheet" href="/style.css"/>
 
 
@@ -53,23 +54,29 @@
 
 
 
-  <header >
+  <section>
 <!-- style="background-image: url('/images/house5.jpg');"> -->
+
+<div class="flexslider">
+  <ul class="slides">
+    
+  </ul>
+</div>
 
 <a href="#description">Description </a>
 <a href="#area">Area </a>
 <a href="#amenities">Amenities </a>
-
+</section>
 
 <section class="listing">
   <div>
-  <h2> Charming Villa </h2>
-  <h3> Entire house - Canggu </h3>
-  <p><span> people icon </span> 4 guests <span> house icon </span> 3 bedroom <span> bed icon </span> 3 beds <span> bath icon </span> 2 bath </p>
+    <h2> Charming Villa </h2>
+    <h3> Entire house - Canggu </h3>
+    <p><span> people icon </span> 4 guests <span> house icon </span> 3 bedroom <span> bed icon </span> 3 beds <span> bath icon </span> 2 bath </p>
 
-<!--  - - - - - insert this home is on people's minds  -->
+    <!--  - - - - - insert this home is on people's minds  -->
 
-<section class="banner" style="background-image:url('/images/house5.jpg')">
+<section class="banner" >
 
   <h4 id="description"> Description </h4>
   <p> A sturdy cabin with lots of natural light, right in a flowerful garden. It will feel like living outdoors, while inside the cabin there is a lingering aroma of larix wood and crackling of the woodstove. This charming garden room has a 180 degrees garden view, with large windows in the front and in the roof. (Full length curtains for the windows allow for privacy. </p>
@@ -98,13 +105,15 @@
 <h4> Cancellation </h4>
 <p> Cancel up to 5 days before check in and get a full refund (minus service fees). Cancel within 5 days of your trip</p4>
 
+  <h4 id="reviews"> Reviews </h4>
+  <p> Great location, quiet area, fantastic kitchen </p>
+
   </div>
 </section>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.4199344750955!2d115.11934191525644!3d-8.651550390399276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2387477e463e9%3A0x11e2107e05a773a3!2sCanggu+Beach+Villa!5e0!3m2!1sen!2sid!4v1513322694278" width="1500" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-<h4 id="reviews"> Reviews </h4>
-<p>  </p>
+
 
   <section class="listings">
     <div>
@@ -157,65 +166,42 @@
 
 
 
-  
+          
 
 
-      
+              
 
-            <section class="login bg-login">
+                    <section class="login bg-login">
 
-              <form class="login" action="https://formspree.io/youemail@gmail.com" method="POST">
-                <div class="grid loginform">
-                  <div class="col-6_sm-12 padded">
-                    <label for="name"> Your Name </label>
-                    <input type="text" name="name" id="name" placeholder="Name" />
+                      <form action="https://formspree.io/youemail@gmail.com" method="POST">
+                        <div class="grid loginform">
+                          <div class="col-6_sm-12 padded">
 
-                    <label for="email"> Your Email </label>
-                    <input type="email" name="_replyto" id="email" placeholder="Email" />
+                            <label for="email"> Your Email </label>
+                            <input type="email" name="_replyto" id="email" placeholder="Email" />
 
-                    <label for="phone"> Your Phone Number </label>
-                    <input type="tel" name="phone" id="phone" placeholder="+(Country Code) Phone Number" />
+                            <label for="password"> Your Password </label>
+                            <input type="password" name="password" id="password" placeholder="Password" />
 
-                    <label for="level"> What's your favourite juice? </label>
-                    <select name="level">
-                      <option value="pineapple">Pineapple Juice</option>
-                      <option value="papaya">Papaya Smoothie</option>
-                      <option value="banana"> Bananarama </option>
-                    </select>
-
-                  </div> <!-- end col 1 -->
-                  <!-- Col 2 -->
-                  <div class="col-6_sm-12 padded">
-
-                    <label>  What are you most interested in?  </label>
-                    <div class="checkboxes">
-                      <p>How to fly<input type="checkbox" name="interests" value="fly" /> </p>
-                      <p>How to surf<input type="checkbox" name="interests" value="surf" /> </p>
-                      <p>How to code<input type="checkbox" name="interests" value="following" /> </p>
-                    </div>
-
-                    <label for="message"> Tell me everything about you... </label>
-                    <textarea name="message" id="message" placeholder="Hey I'm Joe and I want to learn to code..."></textarea>
-
-                    <input type="submit" value="Submit" class="button" />
-                  </div>
-                </form>
-                </section>
+                            <input type="submit" value="Submit" class="button" />
+                          </div>
+                        </form>
+                      </section>
 
 
-              </footer>
+                    </footer>
 
 
 
-              <!--  - - - - ADD JQUERY here - - - -  -->
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+                    <!--  - - - - ADD JQUERY here - - - -  -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
-              <script type="text/javascript" src="/accordian.js"></script>
+                    <script type="text/javascript" src="/jquery.flexslider-min.js"></script>
 
-              <script src="/main.js"></script>
+                    <script src="/main.js"></script>
 
 
 
-            </body>
+                  </body>
 
-            </html>
+                  </html>

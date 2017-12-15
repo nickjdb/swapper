@@ -25,10 +25,10 @@ popular:
         <div class="bg-house" style="background-image:url('{{swap.image}}')"></div>
       </div>
       <div class="text-box bump-up">
+        <p><span> Title:</span> {{swap.title}}</p>
+        <p><span> Location:</span> {{swap.location}}, {{swap.country}}</p>
         <p><span> Type:</span> {{swap.type}}</p>
-        <p><span> Bedrooms:</span>{{swap.bedrooms}}</p>
-        <p><span> Inclusions:</span> {{swap.inclusions}}</p>
-        <p><span> Rating:</span>{{swap.rating}}</p>
+        <p><span> Bedrooms:</span> {{swap.num-bedrooms}}</p>
         <div hidden>
           {% for place in swap.extra-info limit:3 %}
           <p><span> </span> {{place.placeholder}}</p>
@@ -73,14 +73,15 @@ popular:
     <div class="grid-center popular">
         {% for swap in site.swaps limit:3 %}
         <div class="col-3-spaceBetween">
-          <div class="zoom">
+          <a href="{{swap.url}}">
+            <div class="zoom">
             <div class="bg-house" style="background-image:url('{{swap.image}}')"></div>
           </div>
           <div class="text-box bump-up">
+            <p><span> Title:</span> {{swap.title}}</p>
+            <p><span> Location:</span> {{swap.location}}, {{swap.country}}</p>
             <p><span> Type:</span> {{swap.type}}</p>
-            <p><span> Bedrooms:</span>{{swap.bedrooms}}</p>
-            <p><span> Inclusions:</span> {{swap.inclusions}}</p>
-            <p><span> Rating:</span>{{swap.rating}}</p>
+            <p><span> Bedrooms:</span> {{swap.num-bedrooms}}</p>
             <div hidden>
               {% for place in swap.extra-info limit:3 %}
               <p><span> </span> {{place.placeholder}}</p>

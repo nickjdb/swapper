@@ -1,28 +1,34 @@
 // Select all links with hashes
 
 $( document ).ready(function() {
-///first we need to tell our skript to listen for a mouse click on the burger button.
+  ///first we need to tell our skript to listen for a mouse click on the burger button.
   $(".burger-button").click(function(){$(".burger-button").toggleClass("active");
-$(".burger-menu").slideToggle();
+  $(".burger-menu").slideToggle();
 
+});
+
+
+$(".login-button").click(function(){
+  $(".login").toggleClass("flexcenter");
+
+});
+
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
   });
 
 
-    $(".login-button").click(function(){
-  $(".login").toggleClass("flexcenter");
-
-    });
-
-
-        $(".login").click(function(){
-      $(this).toggleClass("flexcenter");
-    }).children().click(function(e){
-      return false;
-    });
+  $(".login").click(function(){
+    console.log('test')
+    $(this).toggleClass("flexcenter");
+  }).children().click(function(e){
+    return false;
+  });
 
 
 
-$('a[href*="#"]')
+  $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -59,31 +65,31 @@ $('a[href*="#"]')
   });
 
   $(window).scroll(function(){
-      if ($(window).scrollTop() >= 75) {
-         $('.scrollcheck').addClass('headerfixed');
-      }
-      else {
-         $('.scrollcheck').removeClass('headerfixed');
-      }
+    if ($(window).scrollTop() >= 75) {
+      $('.scrollcheck').addClass('headerfixed');
+    }
+    else {
+      $('.scrollcheck').removeClass('headerfixed');
+    }
   });
 
 
-     $(".dropdown-nav").click(function(){
-       $(this).children(".dropdown-content").slideToggle();
-     });
+  $(".dropdown-nav").click(function(){
+    $(this).children(".dropdown-content").slideToggle();
+  });
 
-     $(".dropdown-section-1").click(function(){
-       $(".dropdown-section-content-1").slideToggle();
-     });
-     $(".dropdown-section-2").click(function(){
-       $(".dropdown-section-content-2").slideToggle();
-     });
-     $(".dropdown-section-3").click(function(){
-       $(".dropdown-section-content-3").slideToggle();
-     });
-     $(".dropdown-section-4").click(function(){
-       $(".dropdown-section-content-4").slideToggle();
-     });
+  $(".dropdown-section-1").click(function(){
+    $(".dropdown-section-content-1").slideToggle();
+  });
+  $(".dropdown-section-2").click(function(){
+    $(".dropdown-section-content-2").slideToggle();
+  });
+  $(".dropdown-section-3").click(function(){
+    $(".dropdown-section-content-3").slideToggle();
+  });
+  $(".dropdown-section-4").click(function(){
+    $(".dropdown-section-content-4").slideToggle();
+  });
 
 
 
