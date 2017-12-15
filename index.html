@@ -6,6 +6,7 @@ header-image: /images/hitch.jpg
 searchbar: true
 subscribebar: true
 footer: true
+popular:
 ---
 
 <section class="listings">
@@ -15,9 +16,10 @@ footer: true
 
 
   <div class="grid-center">
-  <a href="/listinglanding.html">
+
     {% for swap in site.swaps limit:3 %}
     <div class="col-3-spaceBetween recent">
+      <a href="{{swap.url}}">
 
       <div class="zoom">
         <div class="bg-house" style="background-image:url('{{swap.image}}')"></div>
@@ -32,7 +34,8 @@ footer: true
           <p><span> </span> {{place.placeholder}}</p>
           {% endfor %}
         </div>
-      </div> </a>
+      </div>
+    </a>
     </div>
     {% endfor %}
   </div>

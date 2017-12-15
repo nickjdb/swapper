@@ -82,7 +82,7 @@ position: fixed;
     z-index: 9999;
   }
 
-  .headerfixed a {
+  .headerfixed a, .headerfixed span {
     color: #282828;
   }
 
@@ -125,16 +125,22 @@ h3 {
   text-align: center;
   }
 
-.signup {
+.signupsm {
   padding-left: 35%;
   padding-right: 35%;
-  background-color: #282828;
 }
 
 .login {
   padding-left: 35%;
   padding-right: 35%;
   background-color: #282828;
+}
+.login-button {
+  color: white
+}
+
+.login-buttondd {
+  color: #282828
 }
 
 h2.signup {
@@ -418,9 +424,9 @@ header.signup, section.signup  {
   margin: 0;
 }
 
- section.login {
+.login {
   position: fixed;
-  background-color: #282828;
+  background-color: rgba(40, 40, 40, 0.5019607843137255);
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -609,7 +615,7 @@ input[type="submit"] {
   border-bottom:3px solid #282828;
 }
 
-form.login {
+.loginform {
   background-color: white;
 }
 
@@ -617,4 +623,11 @@ form.login {
 
 .dropdown-content  {
   display:  none;
+  }
+
+
+  .flexcenter {
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }

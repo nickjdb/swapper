@@ -9,9 +9,18 @@ $(".burger-menu").slideToggle();
 
 
     $(".login-button").click(function(){
-  $(".login").slideToggle();
+  $(".login").toggleClass("flexcenter");
 
     });
+
+
+        $(".login").click(function(){
+      $(this).toggleClass("flexcenter");
+    }).children().click(function(e){
+      return false;
+    });
+
+
 
 $('a[href*="#"]')
   // Remove links that don't actually link to anything

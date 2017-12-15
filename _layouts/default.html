@@ -13,7 +13,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="/style.css"/>
 
 
   <title> Life of a Swapper </title>
@@ -27,11 +27,67 @@
 
   {{content}}
 
+  {% if page.popular %}
+
+  <a href="/listinglanding.html">
+      <div class="grid-center popular">
+
+          <div class="col-3-spaceBetween">
+            <div class="zoom">
+              <div class="bg-house" style="background-image:url('/images/house.jpg')"></div>
+            </div>
+            <div class="text-box bump-up">
+              <p><span> Type:</span> Entire house</p>
+              <p><span> Bedrooms:</span>3 bed</p>
+              <p><span> Inclusions:</span> inc car</p>
+              <p><span> Rating:</span>5 instagram</p>
+              <div hidden>
+
+              </div>
+            </div></a>
+          </div>
+
+  <a href="/listinglanding.html">
+          <div class="col-3-spaceBetween">
+            <div class="zoom">
+              <div class="bg-house" style="background-image:url('/images/house1.jpg')"></div>
+            </div>
+            <div class="text-box bump-up">
+              <p><span> Type:</span> Apartment</p>
+              <p><span> Bedrooms:</span>2 bed</p>
+              <p><span> Inclusions:</span> Nothing</p>
+              <p><span> Rating:</span>4 star</p>
+              <div hidden>
+
+              </div>
+            </div> </a>
+          </div>
+
+  <a href="/listinglanding.html">
+          <div class="col-3-spaceBetween">
+            <div class="zoom">
+              <div class="bg-house" style="background-image:url('/images/house3.jpg')"></div>
+            </div>
+            <div class="text-box bump-up">
+              <p><span> Type:</span> Apartment</p>
+              <p><span> Bedrooms:</span>2 bed</p>
+              <p><span> Inclusions:</span> Nothing</p>
+              <p><span> Rating:</span>4 star</p>
+              <div hidden>
+
+              </div>
+            </div></a>
+          </div>
+
+{% endif %}
+
+
+
   {% if page.subscribebar %}
 
   <section>
-    <h2 class="signup"> Sign up and stay informed </h2>
-    <p class="signup"> Join the Swapper community and get the latest on listings and Swaps taken.</p>
+    <h2 class="signupsm"> Sign up and stay informed </h2>
+    <p class="signupsm"> Join the Swapper community and get the latest on listings and Swaps taken.</p>
 
     <div class="col-middle-center center">
       <div class="formspree">
@@ -78,7 +134,7 @@
                   <a href="signup.html"> Sign Up</a>
                 </li>
                 <li>
-                  <span class="login-button"> login </span>
+                  <span class="login-buttondd"> login </span>
                 </li>
                 <ul>
                 </div>
