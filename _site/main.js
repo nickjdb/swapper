@@ -7,6 +7,12 @@ $(".burger-menu").slideToggle();
 
   });
 
+
+    $(".login-button").click(function(){
+  $(".login").slideToggle();
+
+    });
+
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -51,6 +57,25 @@ $('a[href*="#"]')
          $('.scrollcheck').removeClass('headerfixed');
       }
   });
+
+
+     $(".dropdown-nav").click(function(){
+       $(this).children(".dropdown-content").slideToggle();
+     });
+
+     $(".dropdown-section-1").click(function(){
+       $(".dropdown-section-content-1").slideToggle();
+     });
+     $(".dropdown-section-2").click(function(){
+       $(".dropdown-section-content-2").slideToggle();
+     });
+     $(".dropdown-section-3").click(function(){
+       $(".dropdown-section-content-3").slideToggle();
+     });
+     $(".dropdown-section-4").click(function(){
+       $(".dropdown-section-content-4").slideToggle();
+     });
+
 
 
 });

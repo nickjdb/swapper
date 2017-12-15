@@ -128,6 +128,13 @@ h3 {
 .signup {
   padding-left: 35%;
   padding-right: 35%;
+  background-color: #282828;
+}
+
+.login {
+  padding-left: 35%;
+  padding-right: 35%;
+  background-color: #282828;
 }
 
 h2.signup {
@@ -403,12 +410,26 @@ background-image: url('images/house6.jpg');
 background-image: url('images/house7.jpg');
 }
 
-header.login, form.login, footer.login  {
+header.signup, section.signup  {
   background-attachment: fixed;
-  background-image: url(/images/house6.jpg);
+  background-image: url(/images/house7.jpg);
   background-size: cover;
   background-position: center;
   margin: 0;
+}
+
+ section.login {
+  position: fixed;
+  background-color: #282828;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  z-index: 99999;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+display: none;
 }
 
 
@@ -587,3 +608,13 @@ input[type="submit"] {
 .form {
   border-bottom:3px solid #282828;
 }
+
+form.login {
+  background-color: white;
+}
+
+/*  FAQ section - - - - - - - */
+
+.dropdown-content  {
+  display:  none;
+  }
