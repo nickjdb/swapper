@@ -383,6 +383,11 @@ background-image: url('images/map3.jpg');
 padding: 15vh 5%;
 }
 
+.angle {
+padding-top: 30vw;
+margin-top: -30vw;
+}
+
 .bg-image4 h2 {
 color: white;
 }
@@ -501,6 +506,11 @@ svg{
   width:100%;
   left:0;
 }
+
+.clip-svg {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+
 .top{
     top: 0;
 }

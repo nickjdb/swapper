@@ -6,6 +6,12 @@ footer: true
 <section>
 <!-- style="background-image: url('{{page.header-image}}');"> -->
 
+<div class="popup-gallery">
+  {% for item in page.gallery %}
+	<a href="{{item.image_path}}" title="The Cleaner"><img src="{{item.image_path}}" width="75" height="75"></a>
+	 {% endfor %}
+</div>
+
 <div class="flexslider">
   <ul class="slides">
     {% for item in page.gallery %}
