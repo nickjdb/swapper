@@ -190,9 +190,9 @@ a {
   display: inline-block;
 }
 
-.listing{
+.listings {
 background-color: #fcfaf4;
-width: 70%;
+width: 100%;
 text-align: left;
 }
 
@@ -544,6 +544,10 @@ polygon{
     left: 0;
     z-index: 5
   }
+
+h4 .banner {
+  color: #282828;
+}
 
 section .popup-gallery {
     min-height: 15vh;
