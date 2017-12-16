@@ -443,7 +443,6 @@ header.signup, section.signup  {
 
 .signup {
   background-color: white;
-  width: 70%;
   margin: 0 auto;
 }
 
@@ -545,9 +544,6 @@ polygon{
     z-index: 5
   }
 
-h4 .banner {
-  color: #282828;
-}
 
 section .popup-gallery {
     min-height: 15vh;
