@@ -71,7 +71,19 @@ $(".login-button").click(function(){
     else {
       $('.scrollcheck').removeClass('headerfixed');
     }
+
   });
+
+    $(window).scroll(function(){
+      if ($(window).scrollTop() >= 75) {
+        $('.sidefix').addClass('lockside');
+      }
+      else {
+        $('.sidefix').removeClass('lockside');
+      }
+
+    });
+
 
 
   $(".dropdown-nav").click(function(){

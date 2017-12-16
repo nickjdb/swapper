@@ -4,108 +4,109 @@ footer: true
 ---
 
 <section>
-<!-- style="background-image: url('{{page.header-image}}');"> -->
+  <!-- style="background-image: url('{{page.header-image}}');"> -->
 
-<div class="popup-gallery">
-  {% for item in page.gallery %}
-	<a href="{{item.image_path}}" title="The Cleaner"><img src="{{item.image_path}}" width="75" height="75"></a>
-	 {% endfor %}
-</div>
-
-<div class="flexslider">
-  <ul class="slides">
+  <div class="popup-gallery">
     {% for item in page.gallery %}
-    <li data-thumb="{{item.image_path}}">
-      <img src="{{item.image_path}}"/>
-    </li>
+    <a href="{{item.image_path}}" title="The Cleaner"><img src="{{item.image_path}}" width="75" height="75"></a>
     {% endfor %}
-  </ul>
-</div>
-
-<a href="#description">Description </a>
-<a href="#area">Area </a>
-<a href="#amenities">Amenities </a>
-</section>
-
-<section class="listing">
-  <div>
-    <h2> {{page.title}} </h2>
-    <h3> {{page.type}} - {{page.location}} </h3>
-    <p><span> people icon </span> {{page.num-guests}} guests <span> house icon </span> {{page.num-bedrooms}} bedroom <span> bed icon </span> {{page.num-beds}} beds <span> bath icon </span> {{page.num-bath}} bath </p>
-
-    <!--  - - - - - insert this home is on people's minds  -->
-
-<section class="banner" >
-
-  <h4 id="description"> Description </h4>
-  <p> {{page.description}} </p>
-
-<h4 id="area"> Local area </h4>
-<p> {{page.local-area}} </p>
-
-<h4 id="amenities"> Amenities </h4>
-{% for item in page.amenities %}
-<p> {{item.title}} </p>
-{% endfor %}
-
-<h4> House ruled </h4>
-<p> {{page.rules}}</p4>
-
-<h4> Cancellation </h4>
-<p> {{page.cancellation}}</p4>
-
-  <h4 id="reviews"> Reviews </h4>
-  <p> {{page.reviews}} </p>
-
   </div>
+
+  <a href="#description">Description </a>
+  <a href="#area">Area </a>
+  <a href="#amenities">Amenities </a>
 </section>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.4199344750955!2d115.11934191525644!3d-8.651550390399276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2387477e463e9%3A0x11e2107e05a773a3!2sCanggu+Beach+Villa!5e0!3m2!1sen!2sid!4v1513322694278" width="1500" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div class="grid">
 
 
-
-  <section class="listings">
+  <section class="listing col-8 ">
     <div>
-    <h2> Other suggested locations  </h2>
-  </div>
+      <h2> {{page.title}} </h2>
+      <h3> {{page.type}} - {{page.location}} </h3>
+      <p><span> people icon </span> {{page.num-guests}} guests <span> house icon </span> {{page.num-bedrooms}} bedroom <span> bed icon </span> {{page.num-beds}} beds <span> bath icon </span> {{page.num-bath}} bath </p>
 
-  <div class="grid-center">
-    <div class="col-3-spaceBetween">
-        <div class="bg-house4"></div>
-        <div class="text-box bump-up"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-    </div>
-    <div class="col-3-spacebetween">
-        <div class="bg-house5"></div>
-        <div class="text-box bump-up"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-    </div>
-    <div class="col-3-spaceBetween">
-        <div class="bg-house6"></div>
-        <div class="text-box bump-up"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-    </div> </div>
-  <div class="center">
-    <!-- - - - - -  - insert button  -->
-    <a href="#"> See more </a>
-  </div>
+      <!--  - - - - - insert this home is on people's minds  -->
 
-</section>
+      <section class="banner" >
 
-<section>
-  <h2 class="signup"> Sign up and stay informed </h2>
-  <p class="signup"> Join the Swapper community and get the latest on listings and Swaps taken.</p>
+        <h4 id="description"> Description </h4>
+        <p> {{page.description}} </p>
 
-<div class="col-middle-center center">
-    <div class="formspree">
-    <form method="POST" action="http://formspree.io/nickjdellabosca@gmail.com">
+        <h4 id="area"> Local area </h4>
+        <p> {{page.local-area}} </p>
 
-    </label> <input type="Firstname" placeholder="First Name" id= "firstname" required>
+        <h4 id="amenities"> Amenities </h4>
+        {% for item in page.amenities %}
+        <p> {{item.title}} </p>
+        {% endfor %}
 
-    <input type="email" name="email" placeholder="Your email" id= "email" > </div>
-    <div>  <input type="submit" value="SUBMIT"> </div>
-</section>
+        <h4> House ruled </h4>
+        <p> {{page.rules}}</p4>
 
-</section>
+          <h4> Cancellation </h4>
+          <p> {{page.cancellation}}</p4>
 
-</body>
+            <h4 id="reviews"> Reviews </h4>
+            <p> {{page.reviews}} </p>
+
+          </div>
+        </section>
+      </section>
+
+              <aside class="col-3 sidefix ">
+                bob
+              </aside>
+            </div>
 
 
-</html>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.4199344750955!2d115.11934191525644!3d-8.651550390399276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2387477e463e9%3A0x11e2107e05a773a3!2sCanggu+Beach+Villa!5e0!3m2!1sen!2sid!4v1513322694278" width="1500" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      </section>
+
+
+        <section class="listings">
+          <div>
+            <h2> Other suggested locations  </h2>
+          </div>
+
+          <div class="grid-center">
+            <div class="col-3-spaceBetween">
+              <div class="bg-house4"></div>
+              <div class="text-box bump-up"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="col-3-spacebetween">
+              <div class="bg-house5"></div>
+              <div class="text-box bump-up"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+            <div class="col-3-spaceBetween">
+              <div class="bg-house6"></div>
+              <div class="text-box bump-up"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div> </div>
+            <div class="center">
+              <!-- - - - - -  - insert button  -->
+              <a href="#"> See more </a>
+            </div>
+
+          </section>
+
+          <section>
+            <h2 class="signup"> Sign up and stay informed </h2>
+            <p class="signup"> Join the Swapper community and get the latest on listings and Swaps taken.</p>
+
+            <div class="col-middle-center center">
+              <div class="formspree">
+                <form method="POST" action="http://formspree.io/nickjdellabosca@gmail.com">
+
+                </label> <input type="Firstname" placeholder="First Name" id= "firstname" required>
+
+                <input type="email" name="email" placeholder="Your email" id= "email" > </div>
+                <div>  <input type="submit" value="SUBMIT"> </div>
+              </section>
+
+            </section>
+
+          </body>
+
+
+          </html>
