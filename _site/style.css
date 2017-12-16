@@ -381,7 +381,7 @@ padding:  5%;
 
 
 .bg-image4{
-background-image: url('images/map3.jpg');
+background-image: url('/images/map3.jpg');
 padding: 15vh 5%;
 }
 
@@ -440,6 +440,7 @@ header.signup, section.signup  {
   background-position: center;
   margin: 0;
 }
+
 
 .signup {
   background-color: white;
